@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz informacyjny z wiadomoscia</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/moskwajacek@gmail.com" method="POST">
+
+        <!--       Wpisanie danych osobowych-->
+
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="Imie:"><br>
+
+        <label for="sname">Nazwisko:</label>
+        <input type="text" id="sname" name="Nazwisko:"><br>
+
+        <label for="email">Adres e-mail:</label>
+        <input type="email" id="email" name="Adres e-mail:"><br>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="Telefon:"><br>
+
+        <!--       Wybór miasta zamieszkania-->
+
+        <label for="Miasta">Miasta:</label>
+        <select name="Miasta" id="Miasta">
+<option value="Krakow">Krakow</option>
+<option value="Warszawa">Warszawa</option>
+<option value="Gdansk">Gdansk</option>
+</select><br>
+
+        <!--       Wybór płci-->
+
+        <input type="radio" name="Płeć" value="Facetka" /> Facetka
+        <input type="radio" name="Płeć" value="Facet" /> Facet <br>
+
+        <!--       Potwierdzenie przetwarzania danych-->
+
+        <input type="checkbox" name="Zgoda na prztwarzanie danych" value="zgoda" /> Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji <br>
+
+        <!--       pole tekstowe na wpisanie widomosci-->
+        <label for="Wiadomosc">Wiadomosc prywatna:</label>
+        <textarea name="Wiadomosc" placeholder="Tu wipsz swoją wiadomosc"></textarea><br>
+
+
+
+        <!--       przycisk wysylki formularza-->
+
+        <button type="submit">Wyślij</button>
+        <input type="reset" name="Wyczysc dane">
+    </form>
+</body>
+
+</html>
