@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Formularz informacyjny z wiadomoscia</title>
+    <title>Formularz informacyjny z wiadomością</title>
 </head>
 
 <body>
@@ -25,32 +25,34 @@
 
         <!--       Wybór miasta zamieszkania-->
 
-        <label for="Miasta">Miasta:</label>
-        <select name="Miasta" id="Miasta">
-<option value="Krakow">Krakow</option>
-<option value="Warszawa">Warszawa</option>
-<option value="Gdansk">Gdansk</option>
-</select><br>
+        <label for="Miasto">Miasta zamieszkania:</label>
+        <select name="Miasto" id="Miasto">
+        <option value="Kraków">Kraków</option>
+        <option value="Warszawa">Warszawa</option>
+        <option value="Gdańsk">Gdańsk</option></select><br>
+
 
         <!--       Wybór płci-->
 
-        <input type="radio" name="Płeć" value="Facetka" /> Facetka
-        <input type="radio" name="Płeć" value="Facet" /> Facet <br>
+        <label for="Facetka">Facetka</label>
+        <input type="radio" id="Facetka" name="Płeć" value="Facetka"><br>
+        <label for="Facetka">Facet</label>
+        <input type="radio" id="Facet" name="Płeć" value="Facet"><br>
+
+        <!--       pole tekstowe na wpisanie widomosci-->
+
+        <label for="Wiadomość">Wiadomość prywatna:</label><br>
+        <textarea name="Wiadomość" id="Wiadomość" placeholder="Tu wipsz swoją wiadomość"></textarea><br>
 
         <!--       Potwierdzenie przetwarzania danych-->
 
-        <input type="checkbox" name="Zgoda na prztwarzanie danych" value="zgoda" /> Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji <br>
+        <label for="zgoda">Zgoda na prztwarzanie danych:</label><br>
+        <input type="checkbox" id="zgoda" value="Tak" />Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji<br>
 
-        <!--       pole tekstowe na wpisanie widomosci-->
-        <label for="Wiadomosc">Wiadomosc prywatna:</label>
-        <textarea name="Wiadomosc" id="Wiadomosc" placeholder="Tu wipsz swoją wiadomosc"></textarea><br>
-
-
-
-        <!--       przycisk wysylki formularza-->
+        <!--       przycisk wysylki i restu formularza-->
 
         <button type="submit">Wyślij</button>
-        <input type="reset" name="Wyczysc dane">
+        <input type="reset" name="Wyczyść dane">
     </form>
 </body>
 
