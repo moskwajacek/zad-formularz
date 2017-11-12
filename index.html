@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Formularz informacyjny z wiadomością</title>
+
 </head>
 
 <body>
@@ -11,22 +12,22 @@
 
         <!--       Wpisanie danych osobowych-->
 
-        <label for="name">Imię:</label>
-        <input type="text" id="name" name="Imie:"><br>
+        <label for="name" id="name">Imię:</label>
+        <input type="text" id="tname" name="Imię:"><br>
 
-        <label for="sname">Nazwisko:</label>
-        <input type="text" id="sname" name="Nazwisko:"><br>
+        <label for="sname" id="sname">Nazwisko:</label>
+        <input type="text" id="tsname" name="Nazwisko:"><br>
 
-        <label for="email">Adres e-mail:</label>
-        <input type="email" id="email" name="Adres e-mail:"><br>
+        <label for="email" id="email">Adres e-mail:</label>
+        <input type="email" id="temail" name="Adres e-mail:"><br>
 
         <label for="phone">Telefon:</label>
         <input type="tel" id="phone" name="Telefon:"><br>
 
         <!--       Wybór miasta zamieszkania-->
 
-        <label for="Miasto">Miasto zamieszkania:</label>
-        <select name="Miasto" id="Miasto">
+        <label for="miasto" id="miasto">Miasto zamieszkania:</label>
+        <select id="smiasto" name="Miasto:">
         <option value="Kraków">Kraków</option>
         <option value="Warszawa">Warszawa</option>
         <option value="Gdańsk">Gdańsk</option></select><br>
@@ -34,26 +35,32 @@
 
         <!--       Wybór płci-->
 
-        <label for="Facetka">Facetka</label>
-        <input type="radio" id="Facetka" name="Płeć" value="Facetka"><br>
-        <label for="Facetka">Facet</label>
-        <input type="radio" id="Facet" name="Płeć" value="Facet"><br>
+        <label for="facetka" id="facetka">Facetka:
+        <input type="radio" id="rfacetka" name="Płeć" value="Facetka"><br></label>
+        <label for="facet" id="facet">Facet
+        <input type="radio" id="rfacet" name="Płeć" value="Facet"><br></label>
 
         <!--       pole tekstowe na wpisanie widomosci-->
 
-        <label for="Wiadomość">Wiadomość prywatna:</label><br>
-        <textarea name="Wiadomość" id="Wiadomość" placeholder="Tu wipsz swoją wiadomość"></textarea><br>
+        <label for="wiadomosc" id="wiadomosc">Wiadomość prywatna:</label><br>
+        <textarea id="area" name="Wiadomość prywatna" placeholder="Tu wipsz swoją wiadomość"></textarea><br>
 
         <!--       Potwierdzenie przetwarzania danych-->
 
         <label for="zgoda">Zgoda na prztwarzanie danych:</label><br>
-        <input type="checkbox" id="zgoda" value="Tak" />Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji<br>
+        <input type="checkbox" name="Zgoda na przetwarzanie danych:" id="zgoda" value="Tak">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji.<br>
 
         <!--       przycisk wysylki i restu formularza-->
 
-        <button type="submit">Wyślij</button>
-        <input type="reset" name="Wyczyść dane">
+        <button type="submit" id=submit>Wyślij</button>
+        <button type="reset" id="reset">Wyczyść dane</button>
+        <!--        
+   
+   Druga komenda resetu formularza:
+   
+   <input type="reset" name="Wyczyść dane">
+   
+   -->
     </form>
 </body>
-
 </html>
